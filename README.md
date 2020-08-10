@@ -1,4 +1,4 @@
-# GGBluetooth  【[Chinese](https://github.com/itmarsung/GGBluetooth) | [English](https://github.com/itmarsung/GGBluetooth/blob/master/README_en.md) 】
+# GGBluetoothKit  【[Chinese](https://github.com/itmarsung/GGBluetoothKit) | [English](https://github.com/itmarsung/GGBluetoothKit/blob/master/README_en.md) 】
 
 #### 基于<CoreBluetooth>封装的轻量级蓝牙框架，支持函数式语法糖。 
 
@@ -6,13 +6,13 @@
  
  1）CocoaPods支持
  	
- 	pod 'GGBluetooth', '~> 0.0.1'
+ 	pod 'GGBluetoothKit', '~> 0.0.1'
  
  2）Carthage支持
  coming soon
  
  
- 当然你也可以下载[framework](https://github.com/itmarsung/GGBluetooth/tree/master/GGBluetooth/framework)文件直接导入的项目中。
+ 当然你也可以下载[framework](https://github.com/itmarsung/GGBluetoothKit/tree/master/GGBluetoothKit)文件直接导入的项目中。
 
 
 ## 二、怎样使用？
@@ -21,6 +21,8 @@
 
 #### 1）初始化
   
+    #import "GGBluetoothKit"
+    
     GGBluetooth *bleMgr = [GGBluetooth manager];
     
     GGCentralOptions *centralOptions = [[GGCentralOptions alloc] init];
@@ -68,16 +70,16 @@
 
 
 
-tips:由于ObjC的函数式语法糖实际上采用block调用方式实现，实质上并不是方法调用。书写时Xcode不会有提示。这里我采用了Snippets方式，[这里](https://github.com/itmarsung/GGBluetooth/blob/master/Snippets.zip)是下载链接,导入到你的Xcode资源路径/users/[你自己的用户]/Library/Developer/Xcode/UserData/CodeSnippets就可以享用了。
+tips:由于ObjC的函数式语法糖实际上采用block调用方式实现，实质上并不是方法调用。书写时Xcode不会有提示。这里我采用了Snippets方式，[这里](https://github.com/itmarsung/GGBluetoothKit/blob/master/Snippets.zip)是下载链接,导入到你的Xcode资源路径/users/[你自己的用户]/Library/Developer/Xcode/UserData/CodeSnippets就可以享用了。
 
 
 ## License
 
-GGMutipeer 支持[MIT](https://github.com/itmarsung/GGBluetooth/blob/master/LICENSE)开源协议.
+GGMutipeer 支持[MIT](https://github.com/itmarsung/GGBluetoothKit/blob/master/LICENSE)开源协议.
 
 ## issues and star
 
-在使用过程中，若有问题，欢迎[issus](https://github.com/itmarsung/GGBluetooth/issues)
+在使用过程中，若有问题，欢迎[issus](https://github.com/itmarsung/GGBluetoothKit/issues)
 
 当然也期待你给我个小 ⭐⭐⭐【Star】【Star】【Star】
 
