@@ -1,4 +1,4 @@
-# GGBluetooth  【[Chinese](https://github.com/itmarsung/GGBluetooth) | [English](https://github.com/itmarsung/GGBluetooth/blob/master/README_en.md) 】
+# GGBluetooth  【[Chinese](https://github.com/itmarsung/GGBluetoothKit) | [English](https://github.com/itmarsung/GGBluetoothKit/blob/master/README_en.md) 】
 
 #### A lightweight Bluetooth framework based on encapsulation that supports functional syntactic sugar.
 
@@ -11,7 +11,7 @@
  2）Carthage support
  coming soon
  
- 3)Manual installation You can also download the [framework]((https://github.com/itmarsung/GGBluetooth/tree/master/GGBluetooth/framework)) and import it directly into the project.
+ 3)Manual installation You can also download the [framework](https://github.com/itmarsung/GGBluetoothKit/tree/master/GGBluetoothKit) and import it directly into the project.
 
 ## How to use？
 
@@ -19,6 +19,8 @@
 
 #### 1）Init
   
+    #import "GGBluetoothKit.h"
+    
     GGBluetooth *bleMgr = [GGBluetooth manager];
     
     GGCentralOptions *centralOptions = [[GGCentralOptions alloc] init];
@@ -67,16 +69,16 @@
     });
 
 
-tips:[Here](https://github.com/itmarsung/GGBluetooth/blob/master/Snippets.zip) is Snippet, you can download and import it into your project.
+tips:[Here](https://github.com/itmarsung/GGBluetoothKit/blob/master/Snippets.zip) is Snippet, you can download and import it into your project.
 
 
 
 ## License
 
-GGBluetooth is released under the MIT license. See [LICENSE](https://github.com/itmarsung/GGBluetooth/blob/master/LICENSE) for details.
+GGBluetooth is released under the MIT license. See [LICENSE]((https://github.com/itmarsung/GGBluetoothKit/blob/master/LICENSE) for details.
 
 ## issues and star
 
-If you find bugs, please [issus]((https://github.com/itmarsung/GGBluetooth/issues)), thank you!
+If you find bugs, please [issus](https://github.com/itmarsung/GGBluetoothKit/issues), thank you!
 
 Expectation of your Star ⭐⭐⭐【Star】【Star】【Star】
