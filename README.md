@@ -6,7 +6,7 @@
  
  1）CocoaPods支持
  	
- 	pod 'GGBluetoothKit', '~> 0.0.1'
+ 	pod 'GGBluetoothKit', '~> 0.0.2'
  
  2）Carthage支持
  coming soon

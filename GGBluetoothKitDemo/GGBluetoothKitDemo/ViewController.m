@@ -38,6 +38,8 @@
     bleMgr.automator(NO,centralOptions,^(BOOL success,CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error){
         
     });
+    
+    
 }
 
 
