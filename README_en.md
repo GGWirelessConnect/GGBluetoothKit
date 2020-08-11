@@ -1,6 +1,6 @@
 # GGBluetoothKit  【[Chinese](https://github.com/itmarsung/GGBluetoothKit) | [English](https://github.com/itmarsung/GGBluetoothKit/blob/master/README_en.md) 】
 
-#### A lightweight Bluetooth framework based on encapsulation that supports functional syntactic sugar.
+#### GGBluetoothKit is lightweight and easy to use, support for CoreBluetooth.
 
 ## Install
  
