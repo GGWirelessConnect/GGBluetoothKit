@@ -1,4 +1,4 @@
-# GGBluetooth  【[Chinese](https://github.com/itmarsung/GGBluetoothKit) | [English](https://github.com/itmarsung/GGBluetoothKit/blob/master/README_en.md) 】
+# GGBluetoothKit  【[Chinese](https://github.com/itmarsung/GGBluetoothKit) | [English](https://github.com/itmarsung/GGBluetoothKit/blob/master/README_en.md) 】
 
 #### A lightweight Bluetooth framework based on encapsulation that supports functional syntactic sugar.
 
@@ -6,7 +6,7 @@
  
  1）CocoaPods support
  	
- 	pod 'GGBluetooth', '~> 0.0.1'
+ 	pod 'GGBluetoothKit', '~> 0.0.1'
  
  2）Carthage support
  coming soon
@@ -75,7 +75,7 @@ tips:[Here](https://github.com/itmarsung/GGBluetoothKit/blob/master/Snippets.zip
 
 ## License
 
-GGBluetooth is released under the MIT license. See [LICENSE]((https://github.com/itmarsung/GGBluetoothKit/blob/master/LICENSE) for details.
+GGBluetoothKit is released under the MIT license. See [LICENSE](https://github.com/itmarsung/GGBluetoothKit/blob/master/LICENSE) for details.
 
 ## issues and star
 
