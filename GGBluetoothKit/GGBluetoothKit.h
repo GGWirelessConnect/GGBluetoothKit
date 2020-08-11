@@ -8,9 +8,7 @@
 
 #ifndef GGBluetoothKit_h
 #define GGBluetoothKit_h
-#import "GGMarcos.h"
 #import "GGBluetooth.h"
 #import "GGPeripheralBox.h"
 #import "GGDataConversion.h"
-
 #endif /* GGBluetoothKit_h */

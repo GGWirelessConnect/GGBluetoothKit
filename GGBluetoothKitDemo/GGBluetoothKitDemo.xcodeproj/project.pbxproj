@@ -14,15 +14,15 @@
 		9BC25DB124E0F356006D9384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC25DB024E0F356006D9384 /* Assets.xcassets */; };
 		9BC25DB424E0F356006D9384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC25DB224E0F356006D9384 /* LaunchScreen.storyboard */; };
 		9BC25DB724E0F356006D9384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC25DB624E0F356006D9384 /* main.m */; };
-		9BD3FB8F24E2700A00A434A0 /* GGBLEOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB7724E2700A00A434A0 /* GGBLEOptions.m */; };
-		9BD3FB9024E2700A00A434A0 /* GGPeripheralOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB7924E2700A00A434A0 /* GGPeripheralOptions.m */; };
-		9BD3FB9124E2700A00A434A0 /* GGCentralOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB7C24E2700A00A434A0 /* GGCentralOptions.m */; };
-		9BD3FB9224E2700A00A434A0 /* GGBLEPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB8224E2700A00A434A0 /* GGBLEPeripheralManager.m */; };
-		9BD3FB9324E2700A00A434A0 /* GGBLECentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB8324E2700A00A434A0 /* GGBLECentralManager.m */; };
-		9BD3FB9424E2700A00A434A0 /* GGBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB8424E2700A00A434A0 /* GGBluetooth.m */; };
-		9BD3FB9524E2700A00A434A0 /* GGDataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB8924E2700A00A434A0 /* GGDataConversion.m */; };
-		9BD3FB9624E2700A00A434A0 /* GGError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB8B24E2700A00A434A0 /* GGError.m */; };
-		9BD3FB9724E2700A00A434A0 /* GGPeripheralBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB8E24E2700A00A434A0 /* GGPeripheralBox.m */; };
+		9BD3FBB324E2898900A434A0 /* GGBLEOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB9A24E2898900A434A0 /* GGBLEOptions.m */; };
+		9BD3FBB424E2898900A434A0 /* GGPeripheralOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB9C24E2898900A434A0 /* GGPeripheralOptions.m */; };
+		9BD3FBB524E2898900A434A0 /* GGCentralOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FB9F24E2898900A434A0 /* GGCentralOptions.m */; };
+		9BD3FBB624E2898900A434A0 /* GGDataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBA124E2898900A434A0 /* GGDataConversion.m */; };
+		9BD3FBB724E2898900A434A0 /* GGError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBA324E2898900A434A0 /* GGError.m */; };
+		9BD3FBB824E2898900A434A0 /* GGPeripheralBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBA624E2898900A434A0 /* GGPeripheralBox.m */; };
+		9BD3FBB924E2898900A434A0 /* GGBLEPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBA824E2898900A434A0 /* GGBLEPeripheralManager.m */; };
+		9BD3FBBA24E2898900A434A0 /* GGBLECentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBA924E2898900A434A0 /* GGBLECentralManager.m */; };
+		9BD3FBBB24E2898900A434A0 /* GGBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBAA24E2898900A434A0 /* GGBluetooth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,28 +38,28 @@
 		9BC25DB324E0F356006D9384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BC25DB524E0F356006D9384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BC25DB624E0F356006D9384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9BD3FB6C24E26DD200A434A0 /* GGBluetoothKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBluetoothKit.h; sourceTree = "<group>"; };
-		9BD3FB7724E2700A00A434A0 /* GGBLEOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBLEOptions.m; sourceTree = "<group>"; };
-		9BD3FB7824E2700A00A434A0 /* GGCentralOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCentralOptions.h; sourceTree = "<group>"; };
-		9BD3FB7924E2700A00A434A0 /* GGPeripheralOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPeripheralOptions.m; sourceTree = "<group>"; };
-		9BD3FB7A24E2700A00A434A0 /* GGBLEOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEOptions.h; sourceTree = "<group>"; };
-		9BD3FB7B24E2700A00A434A0 /* GGPeripheralOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPeripheralOptions.h; sourceTree = "<group>"; };
-		9BD3FB7C24E2700A00A434A0 /* GGCentralOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCentralOptions.m; sourceTree = "<group>"; };
-		9BD3FB7E24E2700A00A434A0 /* GGBLEHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEHeader.h; sourceTree = "<group>"; };
-		9BD3FB7F24E2700A00A434A0 /* GGMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGMarcos.h; sourceTree = "<group>"; };
-		9BD3FB8024E2700A00A434A0 /* GGEnumMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGEnumMarcos.h; sourceTree = "<group>"; };
-		9BD3FB8224E2700A00A434A0 /* GGBLEPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBLEPeripheralManager.m; sourceTree = "<group>"; };
-		9BD3FB8324E2700A00A434A0 /* GGBLECentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBLECentralManager.m; sourceTree = "<group>"; };
-		9BD3FB8424E2700A00A434A0 /* GGBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBluetooth.m; sourceTree = "<group>"; };
-		9BD3FB8524E2700A00A434A0 /* GGBLEPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEPeripheralManager.h; sourceTree = "<group>"; };
-		9BD3FB8624E2700A00A434A0 /* GGBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBluetooth.h; sourceTree = "<group>"; };
-		9BD3FB8724E2700A00A434A0 /* GGBLECentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLECentralManager.h; sourceTree = "<group>"; };
-		9BD3FB8924E2700A00A434A0 /* GGDataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDataConversion.m; sourceTree = "<group>"; };
-		9BD3FB8A24E2700A00A434A0 /* GGPeripheralBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPeripheralBox.h; sourceTree = "<group>"; };
-		9BD3FB8B24E2700A00A434A0 /* GGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGError.m; sourceTree = "<group>"; };
-		9BD3FB8C24E2700A00A434A0 /* GGDataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDataConversion.h; sourceTree = "<group>"; };
-		9BD3FB8D24E2700A00A434A0 /* GGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGError.h; sourceTree = "<group>"; };
-		9BD3FB8E24E2700A00A434A0 /* GGPeripheralBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPeripheralBox.m; sourceTree = "<group>"; };
+		9BD3FB9A24E2898900A434A0 /* GGBLEOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBLEOptions.m; sourceTree = "<group>"; };
+		9BD3FB9B24E2898900A434A0 /* GGCentralOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCentralOptions.h; sourceTree = "<group>"; };
+		9BD3FB9C24E2898900A434A0 /* GGPeripheralOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPeripheralOptions.m; sourceTree = "<group>"; };
+		9BD3FB9D24E2898900A434A0 /* GGBLEOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEOptions.h; sourceTree = "<group>"; };
+		9BD3FB9E24E2898900A434A0 /* GGPeripheralOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPeripheralOptions.h; sourceTree = "<group>"; };
+		9BD3FB9F24E2898900A434A0 /* GGCentralOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCentralOptions.m; sourceTree = "<group>"; };
+		9BD3FBA124E2898900A434A0 /* GGDataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDataConversion.m; sourceTree = "<group>"; };
+		9BD3FBA224E2898900A434A0 /* GGPeripheralBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPeripheralBox.h; sourceTree = "<group>"; };
+		9BD3FBA324E2898900A434A0 /* GGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGError.m; sourceTree = "<group>"; };
+		9BD3FBA424E2898900A434A0 /* GGDataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDataConversion.h; sourceTree = "<group>"; };
+		9BD3FBA524E2898900A434A0 /* GGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGError.h; sourceTree = "<group>"; };
+		9BD3FBA624E2898900A434A0 /* GGPeripheralBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPeripheralBox.m; sourceTree = "<group>"; };
+		9BD3FBA824E2898900A434A0 /* GGBLEPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBLEPeripheralManager.m; sourceTree = "<group>"; };
+		9BD3FBA924E2898900A434A0 /* GGBLECentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBLECentralManager.m; sourceTree = "<group>"; };
+		9BD3FBAA24E2898900A434A0 /* GGBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBluetooth.m; sourceTree = "<group>"; };
+		9BD3FBAB24E2898900A434A0 /* GGBLEPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEPeripheralManager.h; sourceTree = "<group>"; };
+		9BD3FBAC24E2898900A434A0 /* GGBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBluetooth.h; sourceTree = "<group>"; };
+		9BD3FBAD24E2898900A434A0 /* GGBLECentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLECentralManager.h; sourceTree = "<group>"; };
+		9BD3FBAF24E2898900A434A0 /* GGBLEHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEHeader.h; sourceTree = "<group>"; };
+		9BD3FBB024E2898900A434A0 /* GGMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGMarcos.h; sourceTree = "<group>"; };
+		9BD3FBB124E2898900A434A0 /* GGEnumMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGEnumMarcos.h; sourceTree = "<group>"; };
+		9BD3FBB224E2898900A434A0 /* GGBluetoothKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBluetoothKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		9BC25D9824E0F355006D9384 = {
 			isa = PBXGroup;
 			children = (
-				9BD3FB5624E26DD200A434A0 /* GGBluetoothKit */,
+				9BD3FB9824E2898900A434A0 /* GGBluetoothKit */,
 				9BC25DA324E0F355006D9384 /* GGBluetoothKitDemo */,
 				9BC25DA224E0F355006D9384 /* Products */,
 			);
@@ -108,66 +108,66 @@
 			path = GGBluetoothKitDemo;
 			sourceTree = "<group>";
 		};
-		9BD3FB5624E26DD200A434A0 /* GGBluetoothKit */ = {
+		9BD3FB9824E2898900A434A0 /* GGBluetoothKit */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3FB6C24E26DD200A434A0 /* GGBluetoothKit.h */,
-				9BD3FB8124E2700A00A434A0 /* Manager */,
-				9BD3FB7624E2700A00A434A0 /* Options */,
-				9BD3FB7D24E2700A00A434A0 /* Header */,
-				9BD3FB8824E2700A00A434A0 /* Utils */,
+				9BD3FBB224E2898900A434A0 /* GGBluetoothKit.h */,
+				9BD3FBA724E2898900A434A0 /* Manager */,
+				9BD3FB9924E2898900A434A0 /* Options */,
+				9BD3FBA024E2898900A434A0 /* Utils */,
+				9BD3FBAE24E2898900A434A0 /* Header */,
 			);
 			name = GGBluetoothKit;
 			path = ../GGBluetoothKit;
 			sourceTree = "<group>";
 		};
-		9BD3FB7624E2700A00A434A0 /* Options */ = {
+		9BD3FB9924E2898900A434A0 /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3FB7A24E2700A00A434A0 /* GGBLEOptions.h */,
-				9BD3FB7724E2700A00A434A0 /* GGBLEOptions.m */,
-				9BD3FB7824E2700A00A434A0 /* GGCentralOptions.h */,
-				9BD3FB7C24E2700A00A434A0 /* GGCentralOptions.m */,
-				9BD3FB7B24E2700A00A434A0 /* GGPeripheralOptions.h */,
-				9BD3FB7924E2700A00A434A0 /* GGPeripheralOptions.m */,
+				9BD3FB9D24E2898900A434A0 /* GGBLEOptions.h */,
+				9BD3FB9A24E2898900A434A0 /* GGBLEOptions.m */,
+				9BD3FB9B24E2898900A434A0 /* GGCentralOptions.h */,
+				9BD3FB9F24E2898900A434A0 /* GGCentralOptions.m */,
+				9BD3FB9E24E2898900A434A0 /* GGPeripheralOptions.h */,
+				9BD3FB9C24E2898900A434A0 /* GGPeripheralOptions.m */,
 			);
 			path = Options;
 			sourceTree = "<group>";
 		};
-		9BD3FB7D24E2700A00A434A0 /* Header */ = {
+		9BD3FBA024E2898900A434A0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3FB7E24E2700A00A434A0 /* GGBLEHeader.h */,
-				9BD3FB7F24E2700A00A434A0 /* GGMarcos.h */,
-				9BD3FB8024E2700A00A434A0 /* GGEnumMarcos.h */,
+				9BD3FBA424E2898900A434A0 /* GGDataConversion.h */,
+				9BD3FBA124E2898900A434A0 /* GGDataConversion.m */,
+				9BD3FBA524E2898900A434A0 /* GGError.h */,
+				9BD3FBA324E2898900A434A0 /* GGError.m */,
+				9BD3FBA224E2898900A434A0 /* GGPeripheralBox.h */,
+				9BD3FBA624E2898900A434A0 /* GGPeripheralBox.m */,
 			);
-			path = Header;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		9BD3FB8124E2700A00A434A0 /* Manager */ = {
+		9BD3FBA724E2898900A434A0 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3FB8624E2700A00A434A0 /* GGBluetooth.h */,
-				9BD3FB8424E2700A00A434A0 /* GGBluetooth.m */,
-				9BD3FB8724E2700A00A434A0 /* GGBLECentralManager.h */,
-				9BD3FB8324E2700A00A434A0 /* GGBLECentralManager.m */,
-				9BD3FB8524E2700A00A434A0 /* GGBLEPeripheralManager.h */,
-				9BD3FB8224E2700A00A434A0 /* GGBLEPeripheralManager.m */,
+				9BD3FBAC24E2898900A434A0 /* GGBluetooth.h */,
+				9BD3FBAA24E2898900A434A0 /* GGBluetooth.m */,
+				9BD3FBAD24E2898900A434A0 /* GGBLECentralManager.h */,
+				9BD3FBA924E2898900A434A0 /* GGBLECentralManager.m */,
+				9BD3FBAB24E2898900A434A0 /* GGBLEPeripheralManager.h */,
+				9BD3FBA824E2898900A434A0 /* GGBLEPeripheralManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		9BD3FB8824E2700A00A434A0 /* Utils */ = {
+		9BD3FBAE24E2898900A434A0 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3FB8C24E2700A00A434A0 /* GGDataConversion.h */,
-				9BD3FB8924E2700A00A434A0 /* GGDataConversion.m */,
-				9BD3FB8A24E2700A00A434A0 /* GGPeripheralBox.h */,
-				9BD3FB8E24E2700A00A434A0 /* GGPeripheralBox.m */,
-				9BD3FB8D24E2700A00A434A0 /* GGError.h */,
-				9BD3FB8B24E2700A00A434A0 /* GGError.m */,
+				9BD3FBAF24E2898900A434A0 /* GGBLEHeader.h */,
+				9BD3FBB024E2898900A434A0 /* GGMarcos.h */,
+				9BD3FBB124E2898900A434A0 /* GGEnumMarcos.h */,
 			);
-			path = Utils;
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,19 +240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD3FB9624E2700A00A434A0 /* GGError.m in Sources */,
-				9BD3FB9024E2700A00A434A0 /* GGPeripheralOptions.m in Sources */,
-				9BD3FB9324E2700A00A434A0 /* GGBLECentralManager.m in Sources */,
+				9BD3FBB424E2898900A434A0 /* GGPeripheralOptions.m in Sources */,
+				9BD3FBBA24E2898900A434A0 /* GGBLECentralManager.m in Sources */,
 				9BC25DAC24E0F355006D9384 /* ViewController.m in Sources */,
+				9BD3FBB924E2898900A434A0 /* GGBLEPeripheralManager.m in Sources */,
 				9BC25DA624E0F355006D9384 /* AppDelegate.m in Sources */,
-				9BD3FB9424E2700A00A434A0 /* GGBluetooth.m in Sources */,
-				9BD3FB9224E2700A00A434A0 /* GGBLEPeripheralManager.m in Sources */,
+				9BD3FBB624E2898900A434A0 /* GGDataConversion.m in Sources */,
+				9BD3FBBB24E2898900A434A0 /* GGBluetooth.m in Sources */,
 				9BC25DB724E0F356006D9384 /* main.m in Sources */,
-				9BD3FB9724E2700A00A434A0 /* GGPeripheralBox.m in Sources */,
-				9BD3FB8F24E2700A00A434A0 /* GGBLEOptions.m in Sources */,
-				9BD3FB9124E2700A00A434A0 /* GGCentralOptions.m in Sources */,
-				9BD3FB9524E2700A00A434A0 /* GGDataConversion.m in Sources */,
+				9BD3FBB324E2898900A434A0 /* GGBLEOptions.m in Sources */,
+				9BD3FBB724E2898900A434A0 /* GGError.m in Sources */,
+				9BD3FBB524E2898900A434A0 /* GGCentralOptions.m in Sources */,
 				9BC25DA924E0F355006D9384 /* SceneDelegate.m in Sources */,
+				9BD3FBB824E2898900A434A0 /* GGPeripheralBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
