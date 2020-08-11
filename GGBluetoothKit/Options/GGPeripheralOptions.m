@@ -8,7 +8,6 @@
 
 #import "GGPeripheralOptions.h"
 #import <CoreBluetooth/CBUUID.h>
-#import <CoreBluetooth/CBCharacteristic.h>
 #import <CoreBluetooth/CBService.h>
 #import <CoreBluetooth/CBDescriptor.h>
 @implementation GGPeripheralCharacteristic
@@ -19,14 +18,9 @@
                        permissions:(CBAttributePermissions)permissions
                        strsForDescriptor:(NSString *_Nullable)strsForDescriptor {
     if (self == [super init]) {
-        
         _properties = properties;
         _data = data;
         _permissions = permissions;
-        
-        if (data) {
-            
-        }
         
         if (uuidString) {
             _UUID = [CBUUID UUIDWithString:uuidString];

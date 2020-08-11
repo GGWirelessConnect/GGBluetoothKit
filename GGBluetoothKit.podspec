@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GGBluetoothKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "基于<CoreBluetooth>封装的轻量级BLE框架。支持函数式语法糖，让你的代码更简练。\GGBluetoothKit is a small framework based on <CoreBluetooth>. Support functional syntactic sugar to make your code more concise."
 
   spec.description  = <<-DESC

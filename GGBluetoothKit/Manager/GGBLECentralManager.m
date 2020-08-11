@@ -401,7 +401,7 @@ DEFINE_ENUM(GG_CBCentralManagerState, GG_CENTRAL_ENUM)
     }
     if (_discoverCharacteristicsEnable) {
         for (CBService *service in peripheral.services) {
-            [peripheral discoverCharacteristics:[self.ggOptions getCharacteristicsUUIDsWithServiceUUID:service.UUID.UUIDString forUUIDsType:GGUUIDsTypeReadAndNotiy] forService:service];
+            [peripheral discoverCharacteristics:[self.ggOptions getCharacteristicsUUIDsWithServiceUUID:service.UUID.UUIDString forUUIDsType:GGUUIDsTypeReadAndNotify] forService:service];
         }
     }
 }

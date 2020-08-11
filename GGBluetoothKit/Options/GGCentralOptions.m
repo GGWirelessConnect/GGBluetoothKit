@@ -64,7 +64,7 @@
     NSArray *characteriscUUIDs = _configOptions[sUUID];
     NSMutableArray *chrArray = [NSMutableArray array];
     for (GGCentralCharacterUUID *uuid in characteriscUUIDs) {
-        if (uuid.type ==GGUUIDsTypeReadAndNotiy) {
+        if (uuid.type ==GGUUIDsTypeReadAndNotify) {
             [chrArray addObject:uuid.UUID];
         }else if (uuid.type == GGUUIDsTypeRead){
             [chrArray addObject:uuid.UUID];

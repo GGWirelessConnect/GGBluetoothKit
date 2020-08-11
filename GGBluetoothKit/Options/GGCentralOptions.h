@@ -11,12 +11,12 @@
 #import "GGBLEOptions.h"
 
 typedef NS_ENUM(NSInteger, GGUUIDsType) {
-    GGUUIDsTypeUnkown       = 0 ,
-    GGUUIDsTypeRead         = 1 << 1,
-    GGUUIDsTypeNotify       = 1 << 2,
-    GGUUIDsTypeWrite        = 1 << 3,
-    GGUUIDsTypeReadAndNotiy = GGUUIDsTypeRead | GGUUIDsTypeNotify,
-    GGUUIDsTypeAll          = GGUUIDsTypeRead | GGUUIDsTypeWrite | GGUUIDsTypeNotify
+    GGUUIDsTypeUnkown           = 0,
+    GGUUIDsTypeRead             = 1 << 0,
+    GGUUIDsTypeNotify           = 1 << 1,
+    GGUUIDsTypeWrite            = 1 << 2,
+    GGUUIDsTypeReadAndNotify    = GGUUIDsTypeRead | GGUUIDsTypeNotify,
+    GGUUIDsTypeAll              = GGUUIDsTypeRead | GGUUIDsTypeWrite | GGUUIDsTypeNotify
 };
 
 @class CBCentralManager,CBPeripheral;

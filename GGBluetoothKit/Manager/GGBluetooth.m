@@ -116,12 +116,11 @@ static GGBluetooth *manager = nil;
 #pragma mark- Function syntactic sugar
 
 - (GGBluetooth *(^)(BOOL onMainThread,GGCentralOptions *options))setup {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(BOOL onMainThread,GGCentralOptions *options){
-        @GGStrongObjc(self);
         self.ggOptions = options;
-
+        @GGWeakObjc(self);
         [self.ggCentralManager openServiceWithOnMainThread:onMainThread bleOptions:options complete:^(CBCentralManager *central,NSString *logMsg) {
+            @GGStrongObjc(self);
             if (central.state == GGBLEPoweredOnState) {
                 if (manager->_scanEnable && self.ggCentralManager.scanEnable) {
                     [self.ggCentralManager scanPeripherals];
@@ -189,9 +188,7 @@ static GGBluetooth *manager = nil;
 }
 
 - (GGBluetooth *(^)(void))commit {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(void){
-        @GGStrongObjc(self);
         [self __resetGGCentralManagerState];
         [self __verifyGGBLECentralManangerStates];
         [self __setGGBLECentralManagerStates];
@@ -201,9 +198,7 @@ static GGBluetooth *manager = nil;
 }
 
 - (GGBluetooth *(^)(void(^)(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error)))commitWithDidUpdateValueForCharacteristicCallback {
-     @GGWeakObjc(self);
      return ^GGBluetooth *(void(^callback)(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error)){
-         @GGStrongObjc(self);
          [self __verifyGGBLECentralManangerStates];
          [self __setGGBLECentralManagerStates];
          
@@ -280,9 +275,7 @@ static GGBluetooth *manager = nil;
 /// @param complete <#complete description#>
 - (void)setWriteData:(NSData *)data forPeripheral:(CBPeripheral *)peripheral characteristic:(CBCharacteristic *)characteristic complete:(void(^)(BOOL success,CBCharacteristic *c,NSError *error))complete
 {
-    @GGWeakObjc(self);
     if(complete){
-        @GGStrongObjc(self);
         [self.ggCentralManager writeData:data forPeripheral:peripheral characteristic:characteristic callback:^(BOOL success, NSError * _Nonnull error) {
             if (error) return;
         }];
@@ -301,11 +294,12 @@ static GGBluetooth *manager = nil;
 #pragma mark-  Manual mode
 
 - (GGBluetooth *(^)(BOOL onMainThread,void(^)(CBCentralManager *central,CBPeripheral *peripheral,NSDictionary<NSString *, id> *advertisementData,NSNumber *RSSI)))setupAndScan {
-    @GGWeakObjc(self);
+    
     return ^GGBluetooth *(BOOL onMainThread,void(^callback)(CBCentralManager *central,CBPeripheral *peripheral,NSDictionary<NSString *, id> *advertisementData,NSNumber *RSSI)){
-        @GGStrongObjc(self);
+        @GGWeakObjc(self);
         [self.ggCentralManager openServiceWithOnMainThread:onMainThread bleOptions:nil complete:^(CBCentralManager *central,NSString *logMsg) {
             if (central.state == GGBLEPoweredOnState) {
+                @GGStrongObjc(self);
                 self.ggCentralManager.scanEnable = YES;
                 [self.ggCentralManager scanPeripherals];
                 [self setScanPeripheralsCallback:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary<NSString *,id> *advertisementData, NSNumber *RSSI) {
@@ -321,9 +315,7 @@ static GGBluetooth *manager = nil;
  * Stop scan peripherals
  */
 - (GGBluetooth *(^)(void))doStopScan {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(void){
-        @GGStrongObjc(self);
         [self.ggCentralManager stopScanPeripheral];
         return manager;
     };
@@ -333,10 +325,8 @@ static GGBluetooth *manager = nil;
  * connect
  */
 - (GGBluetooth *(^)(CBPeripheral *peripheral,void(^)(CBCentralManager *central,BOOL success,NSError *error)))doConnect {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(CBPeripheral *peripheral, void(^callback)(CBCentralManager *central,BOOL success,NSError *error)){
         if (callback) {
-            @GGStrongObjc(self);
             [self.ggCentralManager connectPeripheral:peripheral complete:^(CBCentralManager *central, CBPeripheral *peripheral, BOOL success, NSError *error) {
                 callback(central,success,error);
             }];
@@ -348,10 +338,8 @@ static GGBluetooth *manager = nil;
 
 ///disconnect
 - (GGBluetooth *(^)(CBPeripheral *peripheral, void(^)(CBCentralManager *central,CBPeripheral *peripheral,NSError *error)))doDisconnect {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(CBPeripheral *peripheral,void (^callback)(CBCentralManager *central,CBPeripheral *peripheral,NSError *error)){
         if (callback) {
-            @GGStrongObjc(self);
             [self.ggCentralManager disConnectPeripherial:peripheral];
             [self.ggCentralManager setDisconnectNotification:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
                 callback(central,peripheral,error);
@@ -363,10 +351,8 @@ static GGBluetooth *manager = nil;
 
 /// discoverServices
 - (GGBluetooth *(^)(CBPeripheral *peripheral,GGUUIDs *serviceUUIDs,void(^)(CBPeripheral *peripheral,GGServices *services,NSError *error)))doDiscoverServices {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(CBPeripheral *peripheral,GGUUIDs *serviceUUIDs,void(^callback)(CBPeripheral *peripheral,GGServices *services,NSError *error)){
         if (callback) {
-            @GGStrongObjc(self);
             [self.ggCentralManager discoverServicesWithPeripheral:peripheral serviceUUIDs:serviceUUIDs];
             [self.ggCentralManager setDiscoverServicesNotification:^(CBPeripheral *peripheral, GGServices *services, NSError *error) {
                 callback(peripheral,services,error);
@@ -378,10 +364,8 @@ static GGBluetooth *manager = nil;
 
 /// discoverCharateristics
 - (GGBluetooth *(^)(CBPeripheral *peripheral,GGUUIDs *characteristicUUIDs,CBService *service, void(^)(CBPeripheral *peripheral,GGCharacteristics *characteristics,NSError *error)))doDiscoverCharateristics {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(CBPeripheral *peripheral,GGUUIDs *characteristicUUIDs,CBService *service,void(^callback)(CBPeripheral *peripheral,GGCharacteristics *characteristics,NSError *error)){
         if (callback) {
-            @GGStrongObjc(self);
             [self.ggCentralManager discoverCharacteristicsWithPeripheral:peripheral characteristicsUUIDs:characteristicUUIDs forService:service];
             [self.ggCentralManager setDiscoverCharacteristicsNotificaiton:^(CBPeripheral *peripheral, GGCharacteristics *characteristics, NSError *error) {
                 callback(peripheral,characteristics,error);
@@ -393,10 +377,8 @@ static GGBluetooth *manager = nil;
 
 /// didUpdateValueForCharacteritic [default mode]
 - (GGBluetooth *(^)(CBPeripheral *peripheral,CBCharacteristic *characteristic,void(^)(CBPeripheral *peripheral,CBCharacteristic *characteristic,NSError *error)))doDidUpdateValueForCharacteritic {
-    @GGWeakObjc(self);
     return ^GGBluetooth *(CBPeripheral *peripheral,CBCharacteristic *characteristic,void(^callback)(CBPeripheral *peripheral,CBCharacteristic *characteristic,NSError *error)){
         if (callback) {
-            @GGStrongObjc(self);
             if ((characteristic.properties & CBCharacteristicPropertyRead) != 0) {
                 [self.ggCentralManager readValueWithPeripheral:peripheral forCharacteristic:characteristic];
                 [self.ggCentralManager setDidUpdateValueForCharacteristicNotification:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
