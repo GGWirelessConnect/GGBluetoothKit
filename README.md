@@ -1,6 +1,6 @@
 # GGBluetoothKit  【[Chinese](https://github.com/itmarsung/GGBluetoothKit) | [English](https://github.com/itmarsung/GGBluetoothKit/blob/master/README_en.md) 】
 
-#### 基于<CoreBluetooth>封装的轻量级蓝牙框架，支持函数式语法糖。 
+####  基于CoreBluetooth封装的轻量级BLE框架。支持函数式语法糖，让你的代码更简练。
 
 ## 一、安装
  
