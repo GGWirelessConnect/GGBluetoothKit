@@ -21,6 +21,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/itmarsung/GGBluetoothKit.git", :tag => spec.version }
 
-  spec.source_files = 'GGBluetoothKit/GGBluetoothKit.h,GGBluetoothKit/Manager/*.{h,m},GGBluetoothKit/Header/*.{h,m},GGBluetoothKit/Options/*.{h,m},GGBluetoothKit/Utils/*.{h,m},'
+  spec.source_files = 'GGBluetoothKit/GGBluetoothKit.h','GGBluetoothKit/**.{h,m}'
 
 end
