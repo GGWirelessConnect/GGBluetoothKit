@@ -75,7 +75,7 @@ tips:由于ObjC的函数式语法糖实际上采用block调用方式实现，实
 
 ## License
 
-GGMutipeer 支持[MIT](https://github.com/itmarsung/GGBluetoothKit/blob/master/LICENSE)开源协议.
+GGBluetoothKit 支持[MIT](https://github.com/itmarsung/GGBluetoothKit/blob/master/LICENSE)开源协议.
 
 ## issues and star
 
