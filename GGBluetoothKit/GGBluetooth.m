@@ -118,9 +118,7 @@ static GGBluetooth *manager = nil;
 - (GGBluetooth *(^)(BOOL onMainThread,GGCentralOptions *options))setup {
     return ^GGBluetooth *(BOOL onMainThread,GGCentralOptions *options){
         self.ggOptions = options;
-        @GGWeakObjc(self);
         [self.ggCentralManager openServiceWithOnMainThread:onMainThread bleOptions:options complete:^(CBCentralManager *central,NSString *logMsg) {
-            @GGStrongObjc(self);
             if (central.state == GGBLEPoweredOnState) {
                 if (manager->_scanEnable && self.ggCentralManager.scanEnable) {
                     [self.ggCentralManager scanPeripherals];

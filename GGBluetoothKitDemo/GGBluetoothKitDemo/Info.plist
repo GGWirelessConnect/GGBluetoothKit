@@ -60,5 +60,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>打开蓝牙</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>打开蓝牙</string>
 </dict>
 </plist>

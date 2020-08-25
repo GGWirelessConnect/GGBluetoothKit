@@ -8,11 +8,18 @@
 #import "GGCentralOptions.h"
 #import <CoreBluetooth/CBCentralManager.h>
 #import "GGError.h"
+#import "GGMarcos.h"
 
-
+BOOL __verifyUUID(NSString *uuidString) {
+    NSString *regex = @"^[a-fA-F0-9]+$";
+    return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex] evaluateWithObject:uuidString];
+}
 @implementation GGCentralCharacterUUID
 - (GGCentralCharacterUUID *)initWithhUUIDString:(NSString *)uuidString type:(GGUUIDsType)type {
     if (self == [super init]) {
+        if (!__verifyUUID(uuidString)) {
+            @throw [NSException exceptionWithName:@"Error for invalid character uuid format" reason:[NSString stringWithFormat:@"[%@] is not hexString",uuidString] userInfo:nil];
+        }
         _UUID = [CBUUID UUIDWithString:uuidString];
         _type = type;
     }
@@ -38,7 +45,11 @@
 
 - (void)setConfigOptions:(NSDictionary<NSString *,NSArray<GGCentralCharacterUUID*>*> *)configOptions{
     _configOptions = configOptions;
-    
+    for (NSString *key in configOptions.allKeys) {
+        if (!__verifyUUID(key)) {
+            @throw [NSException exceptionWithName:@"Error for invalid service uuid format" reason:[NSString stringWithFormat:@"[%@] is not hexString",key] userInfo:nil];
+        }
+    }
     if ([self __configOptionsVerify]){
         NSMutableArray *serviceUUIDs = [NSMutableArray array];
         [configOptions enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSArray<GGCentralCharacterUUID *> * _Nonnull obj, BOOL * _Nonnull stop) {
@@ -79,12 +90,10 @@
 {
     BOOL pass = YES;
     NSArray *valuesArray = [_configOptions allValues];
-    for (NSArray *cUUIDs in valuesArray) {
-        for (GGCentralCharacterUUID *cUUID in cUUIDs) {
-            if (cUUID.type == GGUUIDsTypeUnkown) {
-                pass = NO;
-                @throw [NSException exceptionWithName:@"Invalid <configOptions> arguments GGUUIDsType name" reason:@"current GGUUIDsType is GGUUIDsTypeUnkown!" userInfo:nil];
-            }
+    for (GGCentralCharacterUUID *cUUID in valuesArray) {
+        if (cUUID.type == GGUUIDsTypeUnkown) {
+            pass = NO;
+            @throw [NSException exceptionWithName:@"Invalid <configOptions> arguments GGUUIDsType name" reason:@"current GGUUIDsType is GGUUIDsTypeUnkown!" userInfo:nil];
         }
     }
     return pass;
