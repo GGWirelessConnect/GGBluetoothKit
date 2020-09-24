@@ -23,6 +23,7 @@
 		9BD3FBF724E2940900A434A0 /* GGError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBE924E2940800A434A0 /* GGError.m */; };
 		9BD3FBF824E2940900A434A0 /* GGDataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBEA24E2940800A434A0 /* GGDataConversion.m */; };
 		9BD3FBF924E2940900A434A0 /* GGPeripheralBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3FBEF24E2940900A434A0 /* GGPeripheralBox.m */; };
+		9BF23C3D251C35D50033AB44 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF23C3C251C35D50033AB44 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		9BD3FBEE24E2940900A434A0 /* GGBLEOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBLEOptions.h; sourceTree = "<group>"; };
 		9BD3FBEF24E2940900A434A0 /* GGPeripheralBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPeripheralBox.m; sourceTree = "<group>"; };
 		9BD3FBF024E2940900A434A0 /* GGBluetoothKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBluetoothKit.h; sourceTree = "<group>"; };
+		9BF23C3B251C35D50033AB44 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		9BF23C3C251C35D50033AB44 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			children = (
 				9BD3FBF024E2940900A434A0 /* GGBluetoothKit.h */,
 				9BD3FBE024E2940800A434A0 /* GGBluetooth.h */,
+				9BF23C3B251C35D50033AB44 /* Test.h */,
+				9BF23C3C251C35D50033AB44 /* Test.m */,
 				9BD3FBE524E2940800A434A0 /* GGBluetooth.m */,
 				9BD3FBDB24E2940800A434A0 /* GGBLECentralManager.h */,
 				9BD3FBE624E2940800A434A0 /* GGBLECentralManager.m */,
@@ -219,6 +224,7 @@
 				9BD3FBF924E2940900A434A0 /* GGPeripheralBox.m in Sources */,
 				9BD3FBF124E2940900A434A0 /* GGPeripheralOptions.m in Sources */,
 				9BD3FBF624E2940900A434A0 /* GGBLECentralManager.m in Sources */,
+				9BF23C3D251C35D50033AB44 /* Test.m in Sources */,
 				9BC25DB724E0F356006D9384 /* main.m in Sources */,
 				9BC25DA924E0F355006D9384 /* SceneDelegate.m in Sources */,
 			);
