@@ -1,3 +1,4 @@
+//
 /**
  *
  *     _ __ __ __        _ __ __ __
@@ -36,25 +37,12 @@
  * THESOFTWARE
 */
 
-#import "GGError.h"
+#import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
-NSString *const GGErrorDomain = @"com.marsung.GGWirelessConnect.erroDomain";
-
-GGErroUserInfoKey const GGErroUserInfoDescriptionKey = @"GGErroUserInfoDescriptionKey";
-GGErroUserInfoKey const GGErroUserInfoReasonKey = @"GGErroUserInfoReasonKey";
-GGErroUserInfoKey const GGErroUserInfoSuggestionKey = @"GGErroUserInfoSuggestionKey";
-
-@interface GGError ()
+@interface TT : NSObject
 
 @end
 
-@implementation GGError
-- (instancetype)initWithBLEErrorCode:(GGBLEErrorCode)code userInfo:(NSDictionary<GGErroUserInfoKey,id> *)dict{
-    if (self == [super initWithDomain:GGErrorDomain code:code userInfo:dict]) {
-        
-    }
-    return self;
-}
-
-@end
+NS_ASSUME_NONNULL_END
